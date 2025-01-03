@@ -52,3 +52,4 @@ console.log("Inhalt: " + test); // Ausgabe
 const test2 = "Hi" ; // Deklaration + Wertzuweisung gemeinsam !
 // test2 = "Hello!"; // Laufzeitfehler !!
 console.log("Inhalt: " + test2); // Ausgabe
+
