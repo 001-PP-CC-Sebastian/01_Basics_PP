@@ -2,7 +2,7 @@
 // 1. Kapselung von Codeblöcken
 
 // Funktionsaufruf | call
-test();
+// test();
 
 // Funktionsrumpf | callee
 // Funktionsdeklaration
@@ -11,3 +11,15 @@ function test()
     console.log("Hallo, Manuel!");
 }
 
+/***** Funktionen 02a *****/
+// 2a. Parametrisierung + Datenübergabe von INNEN
+
+ausgabeNamen();  // call
+
+function ausgabeNamen() {
+    // interne Variable | What happens in VEGAS ...
+    let firstName = "Reza";
+    console.log("Hallo, " + firstName + "!");
+}
+
+//console.log(firstName); // Fehler : scope!
