@@ -27,10 +27,22 @@ function ausgabeNamen() {
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-ausgabeNamen2("Falk"); // Argument --> Daten für Parameter
-ausgabeNamen2("Maria");
-ausgabeNamen2("Reza");
+// ausgabeNamen2("Falk"); // Argument --> Daten für Parameter
+// ausgabeNamen2("Maria");
+// ausgabeNamen2("Reza");
 
 function ausgabeNamen2(firstName) {  // Parameter
     console.log("Hallo, " + firstName + "!");
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+ausgabeNamenParams("Max","Mütze");
+
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
+
+function ausgabeNamenParams(firstName, secondName) {
+    console.log("Hallo, " + firstName + " " + secondName + "!");
 }
