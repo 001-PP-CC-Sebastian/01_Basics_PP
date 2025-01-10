@@ -148,10 +148,10 @@ function add(a,b) {
 }
 
 // module: console output | test:
-// output("hello");
+// output(ERROR_STR_GEN);
 // output(2);
 function output(outputData) {
-  // console.log(typeof outputData);
+//   console.log(typeof outputData);
     if (typeof outputData == "number") {
         console.log(INFO_STR_RES + outputData); 
     } else {
