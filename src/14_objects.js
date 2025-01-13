@@ -35,6 +35,7 @@ let person = {
                 firstName: "Alexander",
                 familyName: "Pesch",
                 salary: [120000, 160000],
+                permission: true,
                 sayHello: function() {
                     return "Hallo";
                 },
